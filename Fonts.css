@@ -1,0 +1,15 @@
+ @font-face {
+font-family:"Gen Jyuu Gothic Regular";
+src: url(../GenJyuuGothicRegular.ttf) format('truetype');
+}
+
+.page{
+    font-family: Gen Jyuu Gothic Regular;
+    font-size: 12pt;
+    margin: 0 auto;
+    
+}
+img{
+    max-width:100%; 
+    height:auto;
+}

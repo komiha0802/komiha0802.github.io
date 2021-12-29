@@ -1,0 +1,115 @@
+
+header > div,
+nav > div,
+main > div {
+	width: 100%;
+	max-width: 1044px;
+	margin: 0 auto;
+	padding: 30px 0 0;
+}
+
+#header {
+	position: relative;
+	line-height: 0;
+	padding: 30px 15px 0;
+}
+#header h1 {
+}
+.www {
+	display: none;
+}
+@media screen and (min-width:768px) {
+	#header h1 img {
+		width: 50%;
+		max-width: 463px;
+	}
+	#header .www {
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		right: 10px;
+		width: 20%;
+		max-width: 150px;
+	}
+}
+@media screen and (max-width:767px) {
+	#contents .www {
+		display: block;
+		margin: 0 auto 30px;
+		text-align: center;
+	}
+}
+#header h1 {
+	text-align: center;
+}
+
+#footer {
+	background-color: #FFF;
+	padding: 0 0 30px;
+}
+#footer #endbar {
+	width: 100%;
+	height: 20px;
+	margin: 0 auto 30px;
+	background-color: #e4007f;
+}
+#footer #copyright p {
+        font-family: Gen Jyuu Gothic Regular; 
+	font-size: 10px;
+	text-align: center;
+	color: #666;
+	letter-spacing: -.02em;
+}
+.title_year{
+    font-family: Gen Jyuu Gothic Regular;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    font-size: 28px;
+    color: #555;
+}
+.title_year::before,.title_year::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background: #FF3377;
+    top: 40%;
+}
+.title_year::before{
+    margin-left: -15px;
+    transform: translateX(-100%);
+}
+.title_year::after{
+    margin-left: 15px;
+}
+
+
+
+
+.line{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background: #FF3377;
+    top: 40%;
+     margin:0px auto;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+

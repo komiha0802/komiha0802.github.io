@@ -1,0 +1,209 @@
+
+@font-face {
+font-family: "Gen Jyuu Gothic Regular";
+src: url(GenJyuuGothicRegular.ttf) format('opentype');
+}
+@charset 'UTF-8';
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+/*
+html, body {
+	min-width: 320px;
+}
+*/
+body {
+	-webkit-text-size-adjust: none;
+	letter-spacing: .1em;
+	word-break: break-all;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+body {
+	background-color: #fff;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	background-image: url("../img/bg.jpg");
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family:"Gen Jyuu Gothic Regular";
+	font-size: 13px;
+	
+	line-height: 1.5;
+}
+
+header > div,
+nav > div,
+main > div {
+	width: 100%;
+	max-width: 1044px;
+	margin: 0 auto;
+	padding: 30px 0 0;
+}
+
+#header {
+	position: relative;
+	line-height: 0;
+	padding: 30px 15px 0;
+}
+#header h1 {
+}
+.www {
+	display: none;
+}
+@media screen and (min-width:768px) {
+	#header h1 img {
+		width: 50%;
+		max-width: 463px;
+	}
+	#header .www {
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		right: 10px;
+		width: 20%;
+		max-width: 150px;
+	}
+}
+@media screen and (max-width:767px) {
+	#contents .www {
+		display: block;
+		margin: 0 auto 30px;
+		text-align: center;
+	}
+}
+#header h1 {
+	text-align: center;
+}
+
+#contents ul {
+	 display: flex; 
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 10px;
+	line-height: 0;
+	margin-bottom: 30px;
+}
+#contents ul.game {
+}
+@media screen and (min-width:768px) {
+	#contents ul.game {
+		background-color: #f9ffc6;
+		border: 2px solid #d4e544;
+		margin: 0 20px;
+		padding: 10px;
+		border-radius: 15px;
+	}
+}
+#contents ul li {
+	position: relative;
+	padding: 10px 10px;
+	line-height: 0;
+}
+#contents ul li a {
+	display: block;
+	line-height: 0;
+}
+
+@media screen and (min-width:768px) {
+	#contents ul.series li,
+	#contents ul.special li {
+		width: 50%;
+		padding: 10px 10px;
+	}
+	#contents ul.game li {
+		width: calc((100% - 20px) / 3);
+		padding: 0;
+	}
+	#contents ul.game li:nth-child(2) {
+		margin: 0 10px;
+	}
+}
+
+#contents ul.series li .link {
+	width: 40%;
+	max-width: 204px;
+	position: absolute;
+	top: 51%;
+	left: 4%;
+}
+@media screen and (max-width:480px) {
+	#contents ul.series li .link {
+		width: 40%;
+		max-width: 204px;
+		position: absolute;
+		top: 54%;
+		left: 4%;
+	}
+}
+
+#contents ul.game li .link {
+	position: absolute;
+	width: 100%;
+	bottom: 4%;
+	display: flex;
+	justify-content: space-around;
+}
+@media screen and (max-width:767px) {
+	#contents ul.game li .link {
+		width: calc(100% - 20px);
+		bottom: 17px;
+	}
+}
+
+#tw {
+	width: 100%;
+	max-width: 420px;
+	margin-bottom: 30px;
+}
+@media screen and (max-width:509px) {
+	#tw {
+		padding: 30px 15px 0;
+	}
+}
+#tw p {
+	background-color: #1da1f2;
+	text-align: center;
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	line-height: 0;
+	margin-bottom: 15px;
+}
+#tw .twbox {
+	height: 600px;
+	overflow-x: hidden;
+	border: 1px solid #1da1f2;
+	background-color: rgba(255,255,255,.5);
+	border-radius: 5px;
+	padding: 5px 0;
+}
+
+#footer {
+	background-color: #FFF;
+	padding: 0 0 30px;
+}
+#footer #endbar {
+	width: 100%;
+	height: 20px;
+	margin: 0 auto 30px;
+	background-color: #e4007f;
+}
+#footer #copyright p {
+        font-family: Gen Jyuu Gothic Regular; 
+	font-size: 10px;
+	text-align: center;
+	color: #666;
+	letter-spacing: -.02em;
+}
